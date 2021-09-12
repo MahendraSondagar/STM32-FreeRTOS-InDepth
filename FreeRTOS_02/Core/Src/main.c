@@ -153,13 +153,7 @@ int main(void) {
 	/* creation of Start */
 	StartHandle = osThreadNew(MainThread, NULL, &Start_attributes);
 
-	/* creation of MyThread_1 */
-	MyThread_1Handle = osThreadNew(StartMyThread1, (void*) string1,
-			&MyThread_1_attributes);
 
-	/* creation of MyThread_2 */
-	MyThread_2Handle = osThreadNew(StartMyThread2, (void*) string2,
-			&MyThread_2_attributes);
 
 	/* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
