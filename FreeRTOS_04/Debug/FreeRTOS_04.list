@@ -893,7 +893,7 @@ void EventThread(void *argument) {
  800082e:	4603      	mov	r3, r0
  8000830:	2b00      	cmp	r3, #0
  8000832:	d1f5      	bne.n	8000820 <EventThread+0xc>
-			KERNEL_DBG("Event occurs from ISR: %d", Cnt++);
+			KERNEL_DBG("Event occurred from ISR: %d", Cnt++);
  8000834:	68fb      	ldr	r3, [r7, #12]
  8000836:	1c5a      	adds	r2, r3, #1
  8000838:	60fa      	str	r2, [r7, #12]

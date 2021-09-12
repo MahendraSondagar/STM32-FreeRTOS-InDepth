@@ -317,7 +317,7 @@ void EventThread(void *argument) {
 	/* Infinite loop */
 	for (;;) {
 		if (osSemaphoreAcquire(MySemHandle, osWaitForever) == osOK) {
-			KERNEL_DBG("Event occurs from ISR: %d", Cnt++);
+			KERNEL_DBG("Event occurred from ISR: %d", Cnt++);
 			HAL_GPIO_TogglePin(BSP_USER_LED1_GPIO_Port, BSP_USER_LED1_Pin);
 		}
 	}
