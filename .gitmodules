@@ -7,3 +7,6 @@
 [submodule "FreeRTOS_03"]
 	path = FreeRTOS_03
 	url = https://github.com/MahendraSondagar/FreeRTOS_03
+[submodule "FreeRTOS_04"]
+	path = FreeRTOS_04
+	url = https://github.com/MahendraSondagar/FreeRTOS_04
